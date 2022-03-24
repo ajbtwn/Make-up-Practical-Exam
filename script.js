@@ -120,41 +120,61 @@ function calcFinal(tenta) {
 }
 
 function transmutation(grade) {
-  if ((1.00 <= grade)&&(grade <= 1.125)){ 
-    grade = 1.00;
-  }
-  else { if ((1.125 < grade)&&(grade <= 1.375)) {
-    grade = 1.25;
-  } else { if ((1.375 < grade)&&(grade<= 1.625)) {
-    grade = 1.50;
-  } else { if ((1.625 < grade)&&(grade <= 1.875)) {
-    grade = 1.75;
-  } else { if ((1.875 < grade)&&(grade<= 2.125)) {
-    grade = 2.00;
-  } else { if ((2.125 < grade)&&(grade <= 2.375)) {
-    grade = 2.25;
-  } else { if ((2.375 < grade)&&(grade <= 2.625)) {
-    grade = 2.50;
-  } else { if ((2.625 < grade)&&(grade <= 2.875)) {
-    grade = 2.75;
-  } else { if ((2.875 < grade)&&(grade <= 3.5)) {
-    grade = 3.00;
-  } else { if ((3.5 < grade)&&(grade <= 4.5)) {
-    grade = 4.00;
-  } else { if ((4.5<grade)&&(grade<=5)); {
-    grade = 5.00;
-  }
+    if ((1.00 <= grade)&&(grade <= 1.125)){ 
+        grade = 1.00;
     }
+    else { 
+        if ((1.125 < grade)&&(grade <= 1.375)) {
+            grade = 1.25;
+        } 
+        else { 
+            if ((1.375 < grade)&&(grade<= 1.625)) {
+                grade = 1.50;
+            } 
+            else { 
+                if ((1.625 < grade)&&(grade <= 1.875)) {
+                    grade = 1.75;
+                } 
+                else { 
+                    if ((1.875 < grade)&&(grade<= 2.125)) {
+                        grade = 2.00;
+                    } 
+                    else { 
+                        if ((2.125 < grade)&&(grade <= 2.375)) {
+                            grade = 2.25;
+                        } 
+                        else { 
+                            if ((2.375 < grade)&&(grade <= 2.625)) {
+                                grade = 2.50;
+                            } 
+                            else { 
+                                if ((2.625 < grade)&&(grade <= 2.875)) {
+                                    grade = 2.75;
+                                } 
+                                else { 
+                                    if ((2.875 < grade)&&(grade <= 3.5)) {
+                                        grade = 3.00;
+                                    } 
+                                    else { 
+                                        if ((3.5 < grade)&&(grade <= 4.5)) {
+                                            grade = 4.00;
+                                        } 
+                                        else { 
+                                            if ((4.5<grade)&&(grade<=5)); {
+                                                grade = 5.00;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-  getAve(grade);
+  
+    getAve(grade);
 }
 
 function getAve(grade) {
