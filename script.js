@@ -173,9 +173,15 @@ function transmutation(grade) {
             }
         }
     }
-  
-    getAve(grade);
+    
+    if (i==3) {
+        title(grade);
+    }
+    else {
+        getAve(grade);
+    }
 }
+
 
 function getAve(grade) {
      if (i==0) {
@@ -189,19 +195,18 @@ function getAve(grade) {
         }
         else {
             if (i==2) {
+                i=3;
                 ave = (ave + grade) / 3;
                 document.getElementById("grade3").innerHTML = "Subject 3: " + Number(grade).toFixed(2);
-                document.getElementById("ave").innerHTML = "Average Grade: " + Number(ave).toFixed(2);
-                title();
+                transmutation(ave);
             }
         }
     }
 }
 
-function title() {
+function title(ave) {
     let name = document.querySelector("#name").value;
     let secCn = document.querySelector("#secCn").value;  
     document.getElementById("title").innerHTML = secCn + " " + name + "'s Quarterly Grades";
+    document.getElementById("ave").innerHTML = "Average Grade: " + Number(ave).toFixed(2);
 }
-
-  
